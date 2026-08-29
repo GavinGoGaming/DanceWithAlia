@@ -11,7 +11,7 @@ const featuredVideos = [
     },
     {
         url: "https://www.youtube.com/watch?v=sJQuLGs3iv0",
-        title: "Alia dances Cabaret Belleydance at Moun of Tunis",
+        title: "Alia dances Cabaret Bellydance at Moun of Tunis",
         thumbnail: "https://img.youtube.com/vi/sJQuLGs3iv0/hqdefault.jpg"
     }
 ]
@@ -25,7 +25,7 @@ export default function Home() {
                     <div className="header-buttons">
                         <a href="https://www.youtube.com/dancewithalia"><i className="fab fa-youtube"></i></a>
                         <a href="https://www.instagram.com/dance_with_alia/"><i className="fab fa-instagram"></i></a>
-                        <a href="https://x.com/dancewithalia/"><i className="fab fa-x-twitter"></i></a>
+                        {/* <a href="https://x.com/dancewithalia/"><i className="fab fa-x-twitter"></i></a> */}
                     </div>
                 </section>
                 <div className="section-divider"></div>
@@ -39,8 +39,8 @@ export default function Home() {
                     <img src="/profile.jpg" alt="Profile Picture" />
                     <div className="about-content">
                         <span className="title">Alia Bartlett</span>
-                        <p className="description">Dance With Alia is an evolving project that explores the people of and history of dance and music from around the world.
-<br/><br/>There is so much to explore and I welcome your suggestions and contributions.</p>
+                        <p className="description">Alia explores dance and music around the world and interviews people who create and sustain historical legacies.
+<br/><br/>There is so much to discover and I welcome your suggestions and contributions.</p>
                     </div>
                 </section>
                 <div className="section-divider"></div>
@@ -53,6 +53,11 @@ export default function Home() {
                             </a>
                         </div>
                     ))}
+                </div>
+                <div className="section-divider"></div>
+                <div id="footer" className="footer-section">
+                    <img src="/exploring.png" alt="Exploring the world, one dance at a time." />
+                    <span className="copyright">Copyright @ DanceWithAlia.com. All Rights Reserved.</span>
                 </div>
             </main>
         </>
