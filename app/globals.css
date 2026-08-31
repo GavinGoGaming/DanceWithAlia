@@ -73,9 +73,9 @@ section {
     font-size: 22px;
     padding: 0 12px;
     font-family: Roboto, Helvetica, Arial, sans-serif;
-    --ig-1: #f58529;
-    --ig-2: #dd2a7b;
-    --ig-3: #8134af;
+    --ig-1: #ff8d64;
+    --ig-2: #f4716e;
+    --ig-3: #b976bc;
     transition: all 0.3s ease;
 }
 .header-buttons button:hover, .header-buttons a:hover {
@@ -89,12 +89,12 @@ section {
 }
 
 .youtube {
-    background-color: #ff0000;
+    background-color: #e95656;
     color: #fdfdfb;
     border-color: #aa0000 !important;
 }
 .youtube:hover {
-    background-color: #aa0000 !important;
+    background-color: color-mix(in oklab, #e95656 70%, #2b2b2b) !important;
 }
 
 .instagram {

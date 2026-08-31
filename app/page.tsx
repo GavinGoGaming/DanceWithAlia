@@ -1,7 +1,7 @@
 const featuredVideos = [
     {
         url: "https://www.youtube.com/watch?v=XeCazZV1PLs",
-        title: "Pasadena Greek Festival 2013",
+        title: <>Pasadena Greek Festival 2013<br/><div style={{height:18,width:1}}></div></>,
         thumbnail: "https://img.youtube.com/vi/XeCazZV1PLs/hqdefault.jpg"
     },
     {
@@ -57,7 +57,7 @@ export default function Home() {
                     {featuredVideos.map((video, index) => (
                         <div key={index} className="video-card">
                             <a href={video.url} target="_blank" rel="noopener noreferrer">
-                                <img src={video.thumbnail} alt={video.title} />
+                                <img src={video.thumbnail} />
                                 <span className="video-title">{video.title}</span>
                             </a>
                         </div>
