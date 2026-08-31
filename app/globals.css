@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @import url("https://klash-cdn.pages.dev/fontawesome72/css/all.css");
 html {
     height: 100%;
@@ -62,18 +63,56 @@ section {
 }
 .header-buttons button, .header-buttons a {
     border: 1.5px solid #2b2b2b;
-    width: 56px;
-    height: 56px;
-    border-radius: 5px;
+    min-width: 56px;
+    height: 46px;
+    border-radius: 10px;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 22px;
+    padding: 0 12px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    --ig-1: #f58529;
+    --ig-2: #dd2a7b;
+    --ig-3: #8134af;
+    transition: all 0.3s ease;
 }
 .header-buttons button:hover, .header-buttons a:hover {
     background-color: #2b2b2b;
     color: #fdfdfb;
+    scale: 1.05;
+}
+.header-buttons a span {
+    font-size: 18px;
+    margin-left: 8px;
+}
+
+.youtube {
+    background-color: #ff0000;
+    color: #fdfdfb;
+    border-color: #aa0000 !important;
+}
+.youtube:hover {
+    background-color: #aa0000 !important;
+}
+
+.instagram {
+    background: linear-gradient(45deg, var(--ig-1), var(--ig-2), var(--ig-3)) !important;
+    color: #fdfdfb;
+    border-color: #aa0a4e !important;
+}
+.instagram:hover {
+    background: linear-gradient(45deg, color-mix(in srgb, var(--ig-1) 70%, #2b2b2b), color-mix(in srgb, var(--ig-2) 70%, #2b2b2b), color-mix(in srgb, var(--ig-3) 70%, #2b2b2b)) !important;
+}
+
+.header-image-section {
+    width: 100%;
+}
+.header-image-section img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
 }
 
 .section-divider {
@@ -203,5 +242,14 @@ section {
 
     .video-section {
         flex-direction: column;
+    }
+
+    .header-buttons a span {
+        font-size: 15px;
+    }
+    .header-buttons {
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 20px;
     }
 }
